@@ -14,11 +14,23 @@ public class App {
 		
 		EntityManager em = PersistenceUtil.getEntityManager();
 		em.getTransaction().begin();
-		
-//		List<Customer> customerList = em.createQuery("from Customer", Customer.class).getResultList();
-//		for (Customer customer : customerList) {
-//			System.out.println(customer);
-//		}
+//		Query query = em.createQuery("select c from Customers c where CustomerID = :customerId",Customer.class);
+//		    query.setParameter("customerId", "ALFKI");
+//		    List<Customer> list = query.getResultList();
+//		    if(list.size()!=0){
+//			Customer customer = list.get(0);
+//			if(customer.getPassword().equals("password")){
+//			    System.out.println("True");
+//			} else {
+//			    System.out.println("False");
+//			}
+//		    }else{
+//		    System.out.println("False out");
+//		    }
+		List<Customer> customerList = em.createQuery("from Customer", Customer.class).getResultList();
+		for (Customer customer : customerList) {
+			System.out.println(customer);
+		}
 		
 //		Customer johnny = new Customer();
 //		johnny.setCustomerID("APPLE");
@@ -44,6 +56,7 @@ public class App {
 		
 		
 		em.getTransaction().commit();
+		em.close();
 	}
 	
 	/**

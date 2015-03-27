@@ -26,6 +26,7 @@ import javax.faces.bean.RequestScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import com.northwindx.model.Login;
 import com.northwindx.model.jpa.Customer;
@@ -86,6 +87,9 @@ public class LoginBean {
 
 	public String validateLogin() {
 		if (Login.login(name, password, rememberMe)) {
+		    // Set customer so that user can log in
+		    customer = Login.getLoggedInUser();
+		    
 			return "default?faces-redirect=true";
 		} else {
 			return "login";
