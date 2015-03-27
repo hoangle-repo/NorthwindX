@@ -1,0 +1,38 @@
+Author: Hoang Le
+Project: NorthwindX
+
+*******************************************************************************
+Tools used:
+1. wildfly server
+2. google code json-simple
+3. hibernate jpa => persistent.xml has entity provider is hibernate
+	- ANTLR: hibernate use it to parse its query language HQL
+4. SLF4j is used for logs. (reference: struts)
+5. javassist - deal with java bytecode, empower JVM
+	- asm
+	- cglib
+6. Junit: unit testing
+*******************************************************************************
+
+*******************************************************************************
+Ideas to implement:
+1. Add security layer for project
+	- prevent repeated session attack
+	- set authorization for roles
+2. Limit the number of login
+
+
+*******************************************************************************
+
+*******************************************************************************
+Cookie:
+- sessionId
+- username
+- expires
+
+*******************************************************************************
+
+*******************************************************************************
+
+
+*******************************************************************************
