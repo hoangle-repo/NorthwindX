@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+	<h:body>
+		<ui:composition template="/template/common/commonLayout.xhtml">
+			<ui:define name="content">
+				<div class="table-Row">
+					<div class="table-Cell-Side LightBlueBack" />
+					<div class="table-Cell-Main">
+						<img class="imageViewCat" src="resources/Categories/Cat#{productBean.id}.jpg" alt="Image representing the #{productBean.catName.categoryName} category" />
+						<span class="catTitle">#{productBean.catName.categoryName}</span>
+					</div>
+					<div class="table-Cell-Side LightBlueBack" />
+				</div>			
+				<div class="table-Row">
+					<div class="table-Cell-Side LightBlueBack" />
+					<div class="table-Cell-Main center">
+						<c:forEach var="categories" items="#{categoriesBean.categoriesList}">
+							<a href="products.xhtml?id=#{categories.categoryName}">#{categories.categoryName}</a>
+						</c:forEach>
+					</div>
+					<div class="table-Cell-Side LightBlueBack" />
+				</div>
+						
+				<div class="table-Row">
+					<div class="table-Cell-Side LightBlueBack" />
+					<div class="table-Cell-Main">
+						<table class="center">
+							<tr>
+								<th>Image:</th><th>Product Name</th><th>Quantity per Unit</th><th>Details:</th>
+							</tr>
+							<c:forEach var="product" items="#{productBean.productList}">
+							<tr>
+								<td><img class="imageView" src="resources/Products/#{product.productID}.jpg" alt="Image of #{product.productName}" /></td>
+								<td>#{product.productName}</td>
+								<td>#{product.quantityPerUnit}</td>
+								<td><a href="productDetails.xhtml?id=#{product.productID}">Details</a></td>
+							</tr>
+							</c:forEach>
+						</table>
+					</div>
+					<div class="table-Cell-Side LightBlueBack" />
+				</div>
+			</ui:define>
+		</ui:composition>
+	</h:body>
+</html>

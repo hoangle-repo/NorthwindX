@@ -1,0 +1,64 @@
+.titleBig { font-size: xx-large; }
+
+.MenuItem { font-size: xx-large; }
+
+a, a:visited { color: blue; }
+a:hover { color: black; }
+
+.BlueTDHeader { background-color: #99CCFF; }
+.LightBlueBack { background-color: #DDEEFF; }
+.DarkBlueBack { background-color:#6699FF; }
+
+.itemList {
+	border-bottom-style: solid;
+	border-bottom-color: #99CCFF
+}
+
+.left { text-align:left; }
+.center { text-align:center; }
+.right { text-align:right; }
+
+table, .table { margin: 0 auto; }
+.table {
+	display: table;
+	width:900px;
+}
+.table-Row { display:table-row; }
+.table-Cell, .table-Cell-Side, .table-Cell-Main { display: table-cell; }
+
+.table-Cell-Side { width: 100px; }
+.table-Cell-Main {
+	width:700px;
+	margin-left:2em;
+	padding:10px;
+}
+
+.errorLbl { color: red; }
+
+.imageView {
+	width:64px;
+	height:64px;
+}
+.imageViewCat {
+	width:125px;
+	height:150px;
+	text-align: left !important;
+}
+
+.catTitle {
+	font-size: 5em;
+	margin: 0 0.67em 0 0.67em;
+	font-weight: bold; 
+}
+
+.loginTable {
+	width:300px;
+	background-color:#99CCFF;
+	border: 5px solid #6699FF;
+	margin: 3em auto 3em auto;
+}
+
+#itemDetails {
+	margin-left:auto;
+	margin-right:auto;
+}

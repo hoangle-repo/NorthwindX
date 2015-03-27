@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+	<h:body>
+		<ui:composition template="/template/common/commonLayout.xhtml">
+			<ui:define name="content">
+				<div class="table-Row">
+					<div class="table-Cell-Side LightBlueBack" />
+					<div class="table-Cell-Main center">
+						<table id="itemDetails">
+							<tr>
+								<td><img src="resources/Products/#{productDetailsBean.product.productID}.jpg" alt="Image of #{productDetailsBean.product.productName}" style="max-width: 200px"/></td>
+								<td>
+									<h:form id="addToCart">
+										<h3>#{productDetailsBean.product.productName}</h3>
+										<p>#{productDetailsBean.product.quantityPerUnit}</p>
+										<p><strong>#{productDetailsBean.product.unitPrice}</strong></p>
+										<c:if test="#{productDetailsBean.product.unitsInStock > 0}">
+											<p>Quantity: <select name="quantity">
+											<c:forEach var="i" begin="1" end="#{productDetailsBean.product.unitsInStock}">
+												<option value="#{i}">#{i}</option>
+											</c:forEach></select></p>
+											<p><h:commandButton action="#{productDetailsBean.addProductToCart}" image="resources/AddToCart.gif" alt="Add to cart" style="width: 144px; height:26px"></h:commandButton></p>
+										</c:if>
+										<c:if test="#{productDetailsBean.product.unitsInStock == 0}">
+											<p>Product not in stock.</p>
+										</c:if>
+										<input type="hidden" name="id" value="#{productDetailsBean.product.productID}" />									
+									</h:form>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="table-Cell-Side LightBlueBack" />
+				</div>
+			</ui:define>
+		</ui:composition>
+	</h:body>
+</html>

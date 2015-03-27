@@ -1,0 +1,769 @@
+2015-03-26 22:35:32,743 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-03-26 22:35:33,056 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-03-26 22:35:33,120 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-03-26 22:35:33,120 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_05\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_05\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_05\jre
+	java.io.tmpdir = C:\Users\Hoang\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_05\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server\bin;D:\app\Hoangle204\product\12.1.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;c:\cygwin\bin;C:\adt-bundle-windows-x86_64-20140321\sdk\platform-tools;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_05-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_05
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.5-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final
+	jboss.host.name = hoangle
+	jboss.modules.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\modules
+	jboss.node.name = hoangle
+	jboss.qualified.host.name = hoangle
+	jboss.server.base.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = hoangle
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\modules
+	org.jboss.boot.log.file = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 8.1
+	os.version = 6.3
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_05\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_05\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_05\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\jboss-modules.jar -mp C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX
+	user.home = C:\Users\Hoang
+	user.language = en
+	user.name = Hoang
+	user.script = 
+	user.timezone = America/New_York
+	user.variant = 
+2015-03-26 22:35:33,136 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Dorg.jboss.boot.log.file=C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/standalone/log/server.log -Dlogging.configuration=file:C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/standalone/configuration/logging.properties 
+2015-03-26 22:35:34,806 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-03-26 22:35:34,823 INFO  [org.xnio] (MSC service thread 1-15) XNIO version 3.3.0.Final
+2015-03-26 22:35:34,839 INFO  [org.xnio.nio] (MSC service thread 1-15) XNIO NIO Implementation Version 3.3.0.Final
+2015-03-26 22:35:34,855 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-03-26 22:35:34,855 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-03-26 22:35:34,870 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-03-26 22:35:34,870 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2015-03-26 22:35:34,886 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-03-26 22:35:34,886 INFO  [org.jboss.as.security] (MSC service thread 1-14) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-03-26 22:35:34,902 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-03-26 22:35:34,902 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-13) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-03-26 22:35:34,902 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-03-26 22:35:34,917 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-03-26 22:35:34,917 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010417: Started Driver service with driver-name = h2
+2015-03-26 22:35:34,933 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-26 22:35:34,933 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-16) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-26 22:35:34,964 INFO  [org.jboss.as.naming] (MSC service thread 1-7) JBAS011802: Starting Naming Service
+2015-03-26 22:35:34,964 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-03-26 22:35:35,170 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/welcome-content
+2015-03-26 22:35:35,300 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) JBAS017525: Started server default-server.
+2015-03-26 22:35:35,306 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-9) JBAS017531: Host default-host starting
+2015-03-26 22:35:35,308 INFO  [org.jboss.remoting] (MSC service thread 1-15) JBoss Remoting version 4.0.6.Final
+2015-03-26 22:35:35,358 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-9) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\deployments
+2015-03-26 22:35:35,531 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017519: Undertow HTTP listener default listening on /127.0.0.1:8080
+2015-03-26 22:35:36,736 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-03-26 22:35:36,854 INFO  [org.jboss.ws.common.management] (MSC service thread 1-14) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-03-26 22:35:38,693 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-03-26 22:35:38,693 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-03-26 22:35:38,693 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 6402ms - Started 184 of 234 services (82 services are lazy, passive or on-demand)
+2015-03-26 22:35:41,378 INFO  [org.jboss.as.repository] (management-handler-thread - 4) JBAS014900: Content added at location C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\26\a8681cc7cd43c030265a07061834499588ece2\content
+2015-03-26 22:35:41,392 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "NorthwindX.war" (runtime-name: "NorthwindX.war")
+2015-03-26 22:35:44,386 INFO  [org.jboss.as.jpa] (MSC service thread 1-12) JBAS011401: Read persistence.xml for northwindx
+2015-03-26 22:35:44,671 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 5) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'NorthwindX.war#northwindx'
+2015-03-26 22:35:44,686 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 5) HHH000204: Processing PersistenceUnitInfo [
+	name: northwindx
+	...]
+2015-03-26 22:35:44,749 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 5) HHH000412: Hibernate Core {4.3.7.Final}
+2015-03-26 22:35:44,749 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 5) HHH000206: hibernate.properties not found
+2015-03-26 22:35:44,749 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 5) HHH000021: Bytecode provider name : javassist
+2015-03-26 22:35:45,300 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2015-03-26 22:35:45,307 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010403: Deploying JDBC-compliant driver class com.microsoft.sqlserver.jdbc.SQLServerDriver (version 4.0)
+2015-03-26 22:35:45,342 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010417: Started Driver service with driver-name = NorthwindX.war_com.mysql.jdbc.Driver_5_1
+2015-03-26 22:35:45,342 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-11) JBAS010417: Started Driver service with driver-name = NorthwindX.war_com.microsoft.sqlserver.jdbc.SQLServerDriver_4_0
+2015-03-26 22:35:45,347 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 5) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'NorthwindX.war#northwindx'
+2015-03-26 22:35:45,451 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 5) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-03-26 22:35:45,967 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 5) HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2015-03-26 22:35:46,169 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 5) HHH000397: Using ASTQueryTranslatorFactory
+2015-03-26 22:35:46,209 INFO  [org.hibernate.validator.internal.util.Version] (ServerService Thread Pool -- 5) HV000001: Hibernate Validator 5.1.3.Final
+2015-03-26 22:35:46,893 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-16) Initializing Mojarra 2.2.8-jbossorg-1 20140822-1131 for context '/NorthwindX'
+2015-03-26 22:35:48,620 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-16) JBAS017534: Registered web context: /NorthwindX
+2015-03-26 22:35:49,847 INFO  [org.jboss.as.server] (management-handler-thread - 4) JBAS018559: Deployed "NorthwindX.war" (runtime-name : "NorthwindX.war")
+2015-03-26 22:36:23,083 ERROR [org.jboss.remoting.remote.connection] (XNIO-1 I/O-2) JBREM000200: Remote connection failed: java.io.IOException: An existing connection was forcibly closed by the remote host
+2015-03-26 22:36:41,657 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-03-26 22:36:42,001 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-03-26 22:36:42,070 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-03-26 22:36:42,070 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_05\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_05\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_05\jre
+	java.io.tmpdir = C:\Users\Hoang\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_05\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server\bin;D:\app\Hoangle204\product\12.1.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;c:\cygwin\bin;C:\adt-bundle-windows-x86_64-20140321\sdk\platform-tools;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_05-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_05
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.5-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final
+	jboss.host.name = hoangle
+	jboss.modules.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\modules
+	jboss.node.name = hoangle
+	jboss.qualified.host.name = hoangle
+	jboss.server.base.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = hoangle
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\modules
+	org.jboss.boot.log.file = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 8.1
+	os.version = 6.3
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_05\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_05\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_05\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\jboss-modules.jar -mp C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\modules org.jboss.as.standalone -Djboss.home.dir=C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.dir = C:\Users\Hoang\git\NorthwindX\NorthwindX
+	user.home = C:\Users\Hoang
+	user.language = en
+	user.name = Hoang
+	user.script = 
+	user.timezone = America/New_York
+	user.variant = 
+2015-03-26 22:36:42,070 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Dorg.jboss.boot.log.file=C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/standalone/log/server.log -Dlogging.configuration=file:C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/standalone/configuration/logging.properties 
+2015-03-26 22:36:42,320 INFO  [org.jboss.vfs] (MSC service thread 1-4) VFS000002: Failed to clean existing content for temp file provider of type temp. Enable DEBUG level log to find what caused this
+2015-03-26 22:36:43,948 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-03-26 22:36:43,975 INFO  [org.xnio] (MSC service thread 1-16) XNIO version 3.3.0.Final
+2015-03-26 22:36:43,975 INFO  [org.xnio.nio] (MSC service thread 1-16) XNIO NIO Implementation Version 3.3.0.Final
+2015-03-26 22:36:44,006 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-03-26 22:36:44,006 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-03-26 22:36:44,022 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2015-03-26 22:36:44,022 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-03-26 22:36:44,038 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-03-26 22:36:44,038 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-03-26 22:36:44,038 INFO  [org.jboss.as.security] (MSC service thread 1-12) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-03-26 22:36:44,069 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-13) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-26 22:36:44,069 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-03-26 22:36:44,084 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-03-26 22:36:44,084 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-13) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-03-26 22:36:44,116 INFO  [org.jboss.as.naming] (MSC service thread 1-13) JBAS011802: Starting Naming Service
+2015-03-26 22:36:44,116 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-03-26 22:36:44,147 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-03-26 22:36:44,147 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-14) JBAS010417: Started Driver service with driver-name = h2
+2015-03-26 22:36:44,178 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.6.Final
+2015-03-26 22:36:44,241 INFO  [org.jboss.as.repository] (management-handler-thread - 4) JBAS014900: Content added at location C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\a3\4bf082c45a8317e664af39fc5ab30b99973a01\content
+2015-03-26 22:36:44,256 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-9) JBAS010418: Stopped Driver service with driver-name = NorthwindX.war_com.microsoft.sqlserver.jdbc.SQLServerDriver_4_0
+2015-03-26 22:36:44,256 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010418: Stopped Driver service with driver-name = NorthwindX.war_com.mysql.jdbc.Driver_5_1
+2015-03-26 22:36:44,256 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017535: Unregistered web context: /NorthwindX
+2015-03-26 22:36:44,334 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final/welcome-content
+2015-03-26 22:36:44,350 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017525: Started server default-server.
+2015-03-26 22:36:44,381 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017531: Host default-host starting
+2015-03-26 22:36:44,428 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'NorthwindX.war#northwindx'
+2015-03-26 22:36:44,444 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'NorthwindX.war#northwindx'
+2015-03-26 22:36:44,583 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-12) JBAS015012: Started FileSystemDeploymentService for directory C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\deployments
+2015-03-26 22:36:44,759 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:137)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_05]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_05]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_05]
+	at sun.nio.ch.Net.bind(Net.java:414) [rt.jar:1.8.0_05]
+	at sun.nio.ch.Net.bind(Net.java:406) [rt.jar:1.8.0_05]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) [rt.jar:1.8.0_05]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) [rt.jar:1.8.0_05]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67) [rt.jar:1.8.0_05]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.wildfly.extension.undertow.HttpListenerService.startListening(HttpListenerService.java:113)
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:134)
+	... 5 more
+
+2015-03-26 22:36:44,824 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-15) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:258) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_05]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_05]
+Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:156) [wildfly-domain-http-interface-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:224) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) [rt.jar:1.8.0_05]
+	at sun.nio.ch.Net.bind(Net.java:414) [rt.jar:1.8.0_05]
+	at sun.nio.ch.Net.bind(Net.java:406) [rt.jar:1.8.0_05]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) [rt.jar:1.8.0_05]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) [rt.jar:1.8.0_05]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67) [rt.jar:1.8.0_05]
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243) [xnio-api-3.3.0.Final.jar:3.3.0.Final]
+	at org.jboss.as.domain.http.server.ManagementHttpServer.start(ManagementHttpServer.java:135) [wildfly-domain-http-interface-8.2.0.Final.jar:8.2.0.Final]
+	... 6 more
+
+2015-03-26 22:36:44,900 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-12) JBAS015877: Stopped deployment NorthwindX.war (runtime-name: NorthwindX.war) in 639ms
+2015-03-26 22:36:44,902 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-03-26 22:36:44,905 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+    Caused by: java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-03-26 22:36:44,908 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "NorthwindX.war" (runtime-name: "NorthwindX.war")
+2015-03-26 22:36:44,908 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([("subsystem" => "webservices")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => ["jboss.ws.config"],
+    "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+}}
+2015-03-26 22:36:44,909 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "undertow"),
+    ("server" => "default-server"),
+    ("http-listener" => "default")
+]) - failure description: {"JBAS014671: Failed services" => {"jboss.undertow.listener.default" => "org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2015-03-26 22:36:44,911 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "ejb3"),
+    ("service" => "remote")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => ["jboss.ejb3.connector is missing [jboss.remoting.remotingConnectorInfoService.http-remoting-connector]"]}
+2015-03-26 22:36:44,947 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.remoting.remotingConnectorInfoService.http-remoting-connector (missing) dependents: [service jboss.ejb3.connector] 
+JBAS014777:   Services which failed to start:      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: JBAS015811: Failed to start the http-interface service
+      service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+
+2015-03-26 22:36:46,103 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015964: Http management interface is not enabled
+2015-03-26 22:36:46,103 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015954: Admin console is not enabled
+2015-03-26 22:36:46,104 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 4852ms - Started 171 of 230 services (4 services failed or missing dependencies, 82 services are lazy, passive or on-demand)
+2015-03-26 22:36:47,500 INFO  [org.jboss.as.jpa] (MSC service thread 1-15) JBAS011401: Read persistence.xml for northwindx
+2015-03-26 22:36:48,531 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-10) JBAS015877: Stopped deployment NorthwindX.war (runtime-name: NorthwindX.war) in 3627ms
+2015-03-26 22:36:48,547 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "NorthwindX.war" (runtime-name: "NorthwindX.war")
+2015-03-26 22:36:50,591 INFO  [org.jboss.as.jpa] (MSC service thread 1-15) JBAS011401: Read persistence.xml for northwindx
+2015-03-26 22:36:50,794 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'NorthwindX.war#northwindx'
+2015-03-26 22:36:50,794 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 63) HHH000204: Processing PersistenceUnitInfo [
+	name: northwindx
+	...]
+2015-03-26 22:36:51,013 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-14) JBAS010404: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2015-03-26 22:36:51,013 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-14) JBAS010403: Deploying JDBC-compliant driver class com.microsoft.sqlserver.jdbc.SQLServerDriver (version 4.0)
+2015-03-26 22:36:51,028 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010417: Started Driver service with driver-name = NorthwindX.war_com.mysql.jdbc.Driver_5_1
+2015-03-26 22:36:51,028 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-12) JBAS010417: Started Driver service with driver-name = NorthwindX.war_com.microsoft.sqlserver.jdbc.SQLServerDriver_4_0
+2015-03-26 22:36:51,028 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'NorthwindX.war#northwindx'
+2015-03-26 22:36:51,044 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2015-03-26 22:36:51,075 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 63) HHH000397: Using ASTQueryTranslatorFactory
+2015-03-26 22:36:51,279 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (MSC service thread 1-15) Initializing Mojarra 2.2.8-jbossorg-1 20140822-1131 for context '/NorthwindX'
+2015-03-26 22:36:52,175 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-15) JBAS017534: Registered web context: /NorthwindX
+2015-03-26 22:36:59,478 INFO  [org.jboss.as.server] (management-handler-thread - 4) JBAS018562: Redeployed "NorthwindX.war"
+2015-03-26 22:36:59,493 INFO  [org.jboss.as.server] (management-handler-thread - 4) JBAS018565: Replaced deployment "NorthwindX.war" with deployment "NorthwindX.war"
+2015-03-26 22:36:59,493 INFO  [org.jboss.as.repository] (management-handler-thread - 4) JBAS014901: Content removed from location C:\Users\Hoang\git\NorthwindX\NorthwindX\target\wildfly-run\wildfly-8.2.0.Final\standalone\data\content\26\a8681cc7cd43c030265a07061834499588ece2\content
+2015-03-26 22:37:30,328 WARN  [org.hibernate.ejb.HibernatePersistence] (default task-10) HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-03-26 22:37:30,344 WARN  [org.hibernate.ejb.HibernatePersistence] (default task-10) HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-03-26 22:37:30,344 WARN  [org.hibernate.ejb.HibernatePersistence] (default task-10) HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2015-03-26 22:37:30,469 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-10) HHH000204: Processing PersistenceUnitInfo [
+	name: northwindx
+	...]
+2015-03-26 22:37:30,484 WARN  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-10) HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2015-03-26 22:37:30,500 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-10) HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://localhost\SQLEXPRESS:1433;databaseName=NorthwindTwo;]
+2015-03-26 22:37:30,500 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-10) HHH000046: Connection properties: {user=sa, password=****}
+2015-03-26 22:37:30,516 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-10) HHH000006: Autocommit mode: false
+2015-03-26 22:37:30,516 INFO  [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl] (default task-10) HHH000115: Hibernate connection pool size: 20 (min=1)
+2015-03-26 22:37:30,625 INFO  [org.hibernate.dialect.Dialect] (default task-10) HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2015-03-26 22:37:30,656 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (default task-10) HHH000397: Using ASTQueryTranslatorFactory
+2015-03-26 22:37:30,860 INFO  [stdout] (default task-10) Hibernate: select order0_.OrderID as OrderID1_4_, order0_.CustomerID as Customer2_4_, order0_.EmployeeID as Employee3_4_, order0_.Freight as Freight4_4_, order0_.OrderDate as OrderDat5_4_, order0_.RequiredDate as Required6_4_, order0_.ShipAddress as ShipAddr7_4_, order0_.ShipCity as ShipCity8_4_, order0_.ShipCountry as ShipCoun9_4_, order0_.ShipName as ShipNam10_4_, order0_.ShipPostalCode as ShipPos11_4_, order0_.ShipRegion as ShipReg12_4_, order0_.ShipVia as ShipVia13_4_, order0_.ShippedDate as Shipped14_4_ from Orders order0_ where CustomerID=?
+2015-03-26 22:37:34,702 INFO  [stdout] (default task-12) Hibernate: select category0_.CategoryID as Category1_0_, category0_.CategoryName as Category2_0_, category0_.Description as Descript3_0_, category0_.Picture as Picture4_0_ from Categories category0_
+2015-03-26 22:37:34,780 INFO  [stdout] (default task-12) Hibernate: select product0_.ProductID as ProductI1_5_, product0_.CategoryID as Category2_5_, product0_.Discontinued as Disconti3_5_, product0_.ProductName as ProductN4_5_, product0_.QuantityPerUnit as Quantity5_5_, product0_.ReorderLevel as ReorderL6_5_, product0_.SupplierID as Supplier7_5_, product0_.UnitPrice as UnitPric8_5_, product0_.UnitsInStock as UnitsInS9_5_, product0_.UnitsOnOrder as UnitsOn10_5_ from Products product0_ where CategoryID=?
+2015-03-26 22:37:34,796 INFO  [stdout] (default task-12) Hibernate: select supplier0_.SupplierID as Supplier1_6_0_, supplier0_.Address as Address2_6_0_, supplier0_.City as City3_6_0_, supplier0_.CompanyName as CompanyN4_6_0_, supplier0_.ContactName as ContactN5_6_0_, supplier0_.ContactTitle as ContactT6_6_0_, supplier0_.Country as Country7_6_0_, supplier0_.Fax as Fax8_6_0_, supplier0_.Phone as Phone9_6_0_, supplier0_.PostalCode as PostalC10_6_0_, supplier0_.Region as Region11_6_0_ from Suppliers supplier0_ where supplier0_.SupplierID=?
+2015-03-26 22:37:34,952 INFO  [stdout] (default task-12) Hibernate: select supplier0_.SupplierID as Supplier1_6_0_, supplier0_.Address as Address2_6_0_, supplier0_.City as City3_6_0_, supplier0_.CompanyName as CompanyN4_6_0_, supplier0_.ContactName as ContactN5_6_0_, supplier0_.ContactTitle as ContactT6_6_0_, supplier0_.Country as Country7_6_0_, supplier0_.Fax as Fax8_6_0_, supplier0_.Phone as Phone9_6_0_, supplier0_.PostalCode as PostalC10_6_0_, supplier0_.Region as Region11_6_0_ from Suppliers supplier0_ where supplier0_.SupplierID=?
+2015-03-26 22:37:34,983 INFO  [stdout] (default task-12) Hibernate: select supplier0_.SupplierID as Supplier1_6_0_, supplier0_.Address as Address2_6_0_, supplier0_.City as City3_6_0_, supplier0_.CompanyName as CompanyN4_6_0_, supplier0_.ContactName as ContactN5_6_0_, supplier0_.ContactTitle as ContactT6_6_0_, supplier0_.Country as Country7_6_0_, supplier0_.Fax as Fax8_6_0_, supplier0_.Phone as Phone9_6_0_, supplier0_.PostalCode as PostalC10_6_0_, supplier0_.Region as Region11_6_0_ from Suppliers supplier0_ where supplier0_.SupplierID=?
+2015-03-26 22:37:34,999 INFO  [stdout] (default task-12) Hibernate: select supplier0_.SupplierID as Supplier1_6_0_, supplier0_.Address as Address2_6_0_, supplier0_.City as City3_6_0_, supplier0_.CompanyName as CompanyN4_6_0_, supplier0_.ContactName as ContactN5_6_0_, supplier0_.ContactTitle as ContactT6_6_0_, supplier0_.Country as Country7_6_0_, supplier0_.Fax as Fax8_6_0_, supplier0_.Phone as Phone9_6_0_, supplier0_.PostalCode as PostalC10_6_0_, supplier0_.Region as Region11_6_0_ from Suppliers supplier0_ where supplier0_.SupplierID=?
+2015-03-26 22:37:35,015 INFO  [stdout] (default task-12) Hibernate: select supplier0_.SupplierID as Supplier1_6_0_, supplier0_.Address as Address2_6_0_, supplier0_.City as City3_6_0_, supplier0_.CompanyName as CompanyN4_6_0_, supplier0_.ContactName as ContactN5_6_0_, supplier0_.ContactTitle as ContactT6_6_0_, supplier0_.Country as Country7_6_0_, supplier0_.Fax as Fax8_6_0_, supplier0_.Phone as Phone9_6_0_, supplier0_.PostalCode as PostalC10_6_0_, supplier0_.Region as Region11_6_0_ from Suppliers supplier0_ where supplier0_.SupplierID=?
+2015-03-26 22:37:35,046 INFO  [stdout] (default task-12) Hibernate: select supplier0_.SupplierID as Supplier1_6_0_, supplier0_.Address as Address2_6_0_, supplier0_.City as City3_6_0_, supplier0_.CompanyName as CompanyN4_6_0_, supplier0_.ContactName as ContactN5_6_0_, supplier0_.ContactTitle as ContactT6_6_0_, supplier0_.Country as Country7_6_0_, supplier0_.Fax as Fax8_6_0_, supplier0_.Phone as Phone9_6_0_, supplier0_.PostalCode as PostalC10_6_0_, supplier0_.Region as Region11_6_0_ from Suppliers supplier0_ where supplier0_.SupplierID=?
+2015-03-26 22:37:35,062 INFO  [stdout] (default task-12) Hibernate: select supplier0_.SupplierID as Supplier1_6_0_, supplier0_.Address as Address2_6_0_, supplier0_.City as City3_6_0_, supplier0_.CompanyName as CompanyN4_6_0_, supplier0_.ContactName as ContactN5_6_0_, supplier0_.ContactTitle as ContactT6_6_0_, supplier0_.Country as Country7_6_0_, supplier0_.Fax as Fax8_6_0_, supplier0_.Phone as Phone9_6_0_, supplier0_.PostalCode as PostalC10_6_0_, supplier0_.Region as Region11_6_0_ from Suppliers supplier0_ where supplier0_.SupplierID=?
+2015-03-26 22:37:35,077 INFO  [stdout] (default task-12) Hibernate: select supplier0_.SupplierID as Supplier1_6_0_, supplier0_.Address as Address2_6_0_, supplier0_.City as City3_6_0_, supplier0_.CompanyName as CompanyN4_6_0_, supplier0_.ContactName as ContactN5_6_0_, supplier0_.ContactTitle as ContactT6_6_0_, supplier0_.Country as Country7_6_0_, supplier0_.Fax as Fax8_6_0_, supplier0_.Phone as Phone9_6_0_, supplier0_.PostalCode as PostalC10_6_0_, supplier0_.Region as Region11_6_0_ from Suppliers supplier0_ where supplier0_.SupplierID=?
+2015-03-26 22:37:35,108 INFO  [stdout] (default task-12) Hibernate: select category0_.CategoryID as Category1_0_, category0_.CategoryName as Category2_0_, category0_.Description as Descript3_0_, category0_.Picture as Picture4_0_ from Categories category0_ where CategoryID=?
+2015-03-26 22:37:38,792 INFO  [stdout] (default task-27) Hibernate: select category0_.CategoryID as Category1_0_, category0_.CategoryName as Category2_0_, category0_.Description as Descript3_0_, category0_.Picture as Picture4_0_ from Categories category0_
+2015-03-26 22:37:38,808 INFO  [stdout] (default task-27) Hibernate: select product0_.ProductID as ProductI1_5_, product0_.CategoryID as Category2_5_, product0_.Discontinued as Disconti3_5_, product0_.ProductName as ProductN4_5_, product0_.QuantityPerUnit as Quantity5_5_, product0_.ReorderLevel as ReorderL6_5_, product0_.SupplierID as Supplier7_5_, product0_.UnitPrice as UnitPric8_5_, product0_.UnitsInStock as UnitsInS9_5_, product0_.UnitsOnOrder as UnitsOn10_5_ from Products product0_ where CategoryID=?
+2015-03-26 22:37:38,823 INFO  [stdout] (default task-27) Hibernate: select category0_.CategoryID as Category1_0_, category0_.CategoryName as Category2_0_, category0_.Description as Descript3_0_, category0_.Picture as Picture4_0_ from Categories category0_ where CategoryID=?
+2015-03-26 22:37:41,833 INFO  [stdout] (default task-29) Hibernate: select order0_.OrderID as OrderID1_4_, order0_.CustomerID as Customer2_4_, order0_.EmployeeID as Employee3_4_, order0_.Freight as Freight4_4_, order0_.OrderDate as OrderDat5_4_, order0_.RequiredDate as Required6_4_, order0_.ShipAddress as ShipAddr7_4_, order0_.ShipCity as ShipCity8_4_, order0_.ShipCountry as ShipCoun9_4_, order0_.ShipName as ShipNam10_4_, order0_.ShipPostalCode as ShipPos11_4_, order0_.ShipRegion as ShipReg12_4_, order0_.ShipVia as ShipVia13_4_, order0_.ShippedDate as Shipped14_4_ from Orders order0_ where CustomerID=?
+2015-03-26 22:37:42,876 INFO  [stdout] (default task-30) Hibernate: select customer0_.CustomerID as Customer1_1_, customer0_.Address as Address2_1_, customer0_.City as City3_1_, customer0_.CompanyName as CompanyN4_1_, customer0_.ContactName as ContactN5_1_, customer0_.ContactTitle as ContactT6_1_, customer0_.Country as Country7_1_, customer0_.Email as Email8_1_, customer0_.Fax as Fax9_1_, customer0_.Password as Passwor10_1_, customer0_.Phone as Phone11_1_, customer0_.PostalCode as PostalC12_1_, customer0_.Region as Region13_1_ from Customers customer0_ where CustomerID=?
+2015-03-26 22:37:42,908 SEVERE [javax.enterprise.resource.webcontainer.jsf.application] (default task-30) Error Rendering View[/editCustomer.xhtml]: javax.el.ELException: /editCustomer.xhtml: Cant instantiate class: com.northwindx.bean.EditCustomerBean.
+	at com.sun.faces.facelets.compiler.TextInstruction.write(TextInstruction.java:90) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.UIInstructions.encodeBegin(UIInstructions.java:82) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.UILeaf.encodeAll(UILeaf.java:183) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.render.Renderer.encodeChildren(Renderer.java:176) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:889) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1856) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1859) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1859) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:456) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:133) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:337) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:120) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_05]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_05]
+Caused by: com.sun.faces.mgbean.ManagedBeanCreationException: Cant instantiate class: com.northwindx.bean.EditCustomerBean.
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:191) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanBuilder.build(BeanBuilder.java:100) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.createAndPush(BeanManager.java:409) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.create(BeanManager.java:269) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.resolveBean(ManagedBeanELResolver.java:257) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.getValue(ManagedBeanELResolver.java:117) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:176) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:203) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.el.parser.AstIdentifier.getValue(AstIdentifier.java:116) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getBase(AstValue.java:151) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getValue(AstValue.java:200) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:226) [javax.el-3.0.1-b05.jar:]
+	at com.sun.faces.facelets.el.ELText$ELTextVariable.writeText(ELText.java:238) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.TextInstruction.write(TextInstruction.java:85) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	... 40 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at com.northwindx.bean.EditCustomerBean.<init>(EditCustomerBean.java:42) [classes:]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_05]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_05]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_05]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) [rt.jar:1.8.0_05]
+	at java.lang.Class.newInstance(Class.java:433) [rt.jar:1.8.0_05]
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:186) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	... 53 more
+
+2015-03-26 22:37:43,080 ERROR [io.undertow.request] (default task-30) UT005023: Exception handling request to /NorthwindX/faces/editCustomer.xhtml: javax.servlet.ServletException: Cant instantiate class: com.northwindx.bean.EditCustomerBean.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:659) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_05]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_05]
+Caused by: com.sun.faces.mgbean.ManagedBeanCreationException: Cant instantiate class: com.northwindx.bean.EditCustomerBean.
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:191) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanBuilder.build(BeanBuilder.java:100) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.createAndPush(BeanManager.java:409) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.create(BeanManager.java:269) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.resolveBean(ManagedBeanELResolver.java:257) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.getValue(ManagedBeanELResolver.java:117) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:176) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:203) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.el.parser.AstIdentifier.getValue(AstIdentifier.java:116) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getBase(AstValue.java:151) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getValue(AstValue.java:200) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:226) [javax.el-3.0.1-b05.jar:]
+	at com.sun.faces.facelets.el.ELText$ELTextVariable.writeText(ELText.java:238) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.TextInstruction.write(TextInstruction.java:85) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.UIInstructions.encodeBegin(UIInstructions.java:82) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.UILeaf.encodeAll(UILeaf.java:183) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.render.Renderer.encodeChildren(Renderer.java:176) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:889) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1856) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1859) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1859) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:456) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:133) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:337) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:120) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	... 26 more
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:498) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at com.northwindx.bean.EditCustomerBean.<init>(EditCustomerBean.java:42) [classes:]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_05]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_05]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_05]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) [rt.jar:1.8.0_05]
+	at java.lang.Class.newInstance(Class.java:433) [rt.jar:1.8.0_05]
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:186) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	... 53 more
+
+2015-03-26 22:37:45,940 ERROR [io.undertow.request] (default task-31) UT005023: Exception handling request to /NorthwindX/faces/products.xhtml: javax.servlet.ServletException: Cant instantiate class: com.northwindx.bean.CategoriesBean.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:659) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_05]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_05]
+Caused by: com.sun.faces.mgbean.ManagedBeanCreationException: Cant instantiate class: com.northwindx.bean.CategoriesBean.
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:191) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanBuilder.build(BeanBuilder.java:100) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.createAndPush(BeanManager.java:409) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.create(BeanManager.java:269) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.resolveBean(ManagedBeanELResolver.java:257) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.getValue(ManagedBeanELResolver.java:117) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:176) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:203) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.el.parser.AstIdentifier.getValue(AstIdentifier.java:116) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getBase(AstValue.java:151) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getValue(AstValue.java:200) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:226) [javax.el-3.0.1-b05.jar:]
+	at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:109) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.jstl.core.ForEachHandler.apply(ForEachHandler.java:164) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.facelets.tag.ui.DefineHandler.applyDefinition(DefineHandler.java:106) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:206) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFaceletContext$TemplateManager.apply(DefaultFaceletContext.java:395) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeDefinition(DefaultFaceletContext.java:366) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.ui.InsertHandler.apply(InsertHandler.java:111) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.applyNextHandler(DelegatingMetaTagHandler.java:137) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.apply(ComponentTagHandlerDelegateImpl.java:203) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.apply(DelegatingMetaTagHandler.java:120) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:312) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:371) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:350) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeFacelet(DefaultFaceletContext.java:199) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:174) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.apply(DefaultFacelet.java:161) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.buildView(FaceletViewHandlingStrategy.java:990) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	... 26 more
+Caused by: java.lang.IllegalStateException: Transaction already active
+	at org.hibernate.jpa.internal.TransactionImpl.begin(TransactionImpl.java:58) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at com.northwindx.bean.CategoriesBean.<init>(CategoriesBean.java:39) [classes:]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_05]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_05]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_05]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) [rt.jar:1.8.0_05]
+	at java.lang.Class.newInstance(Class.java:433) [rt.jar:1.8.0_05]
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:186) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	... 65 more
+
+2015-03-26 22:37:51,499 ERROR [io.undertow.request] (default task-35) UT005023: Exception handling request to /NorthwindX/faces/products.xhtml: javax.servlet.ServletException: Cant instantiate class: com.northwindx.bean.CategoriesBean.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:659) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_05]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_05]
+Caused by: com.sun.faces.mgbean.ManagedBeanCreationException: Cant instantiate class: com.northwindx.bean.CategoriesBean.
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:191) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanBuilder.build(BeanBuilder.java:100) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.createAndPush(BeanManager.java:409) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.create(BeanManager.java:269) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.resolveBean(ManagedBeanELResolver.java:257) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.getValue(ManagedBeanELResolver.java:117) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:176) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:203) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.el.parser.AstIdentifier.getValue(AstIdentifier.java:116) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getBase(AstValue.java:151) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getValue(AstValue.java:200) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:226) [javax.el-3.0.1-b05.jar:]
+	at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:109) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.jstl.core.ForEachHandler.apply(ForEachHandler.java:164) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.facelets.tag.ui.DefineHandler.applyDefinition(DefineHandler.java:106) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:206) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFaceletContext$TemplateManager.apply(DefaultFaceletContext.java:395) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeDefinition(DefaultFaceletContext.java:366) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.ui.InsertHandler.apply(InsertHandler.java:111) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.applyNextHandler(DelegatingMetaTagHandler.java:137) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.apply(ComponentTagHandlerDelegateImpl.java:203) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.apply(DelegatingMetaTagHandler.java:120) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:312) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:371) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:350) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeFacelet(DefaultFaceletContext.java:199) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:174) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.apply(DefaultFacelet.java:161) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.buildView(FaceletViewHandlingStrategy.java:990) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	... 26 more
+Caused by: java.lang.IllegalStateException: Transaction already active
+	at org.hibernate.jpa.internal.TransactionImpl.begin(TransactionImpl.java:58) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at com.northwindx.bean.CategoriesBean.<init>(CategoriesBean.java:39) [classes:]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_05]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_05]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_05]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) [rt.jar:1.8.0_05]
+	at java.lang.Class.newInstance(Class.java:433) [rt.jar:1.8.0_05]
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:186) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	... 65 more
+
+2015-03-26 22:37:55,748 ERROR [io.undertow.request] (default task-45) UT005023: Exception handling request to /NorthwindX/faces/products.xhtml: javax.servlet.ServletException: Cant instantiate class: com.northwindx.bean.CategoriesBean.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:659) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:61) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:56) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:45) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:63) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:58) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:70) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.security.handlers.SecurityInitialHandler.handleRequest(SecurityInitialHandler.java:76) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:261) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:247) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:76) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:166) [undertow-servlet-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:197) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:759) [undertow-core-1.1.0.Final.jar:1.1.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_05]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_05]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_05]
+Caused by: com.sun.faces.mgbean.ManagedBeanCreationException: Cant instantiate class: com.northwindx.bean.CategoriesBean.
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:191) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanBuilder.build(BeanBuilder.java:100) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.createAndPush(BeanManager.java:409) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.mgbean.BeanManager.create(BeanManager.java:269) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.resolveBean(ManagedBeanELResolver.java:257) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.ManagedBeanELResolver.getValue(ManagedBeanELResolver.java:117) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:176) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:203) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.el.parser.AstIdentifier.getValue(AstIdentifier.java:116) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getBase(AstValue.java:151) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.parser.AstValue.getValue(AstValue.java:200) [javax.el-3.0.1-b05.jar:]
+	at com.sun.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:226) [javax.el-3.0.1-b05.jar:]
+	at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:109) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.jstl.core.ForEachHandler.apply(ForEachHandler.java:164) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.facelets.tag.ui.DefineHandler.applyDefinition(DefineHandler.java:106) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:206) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFaceletContext$TemplateManager.apply(DefaultFaceletContext.java:395) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeDefinition(DefaultFaceletContext.java:366) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.ui.InsertHandler.apply(InsertHandler.java:111) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.applyNextHandler(DelegatingMetaTagHandler.java:137) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.apply(ComponentTagHandlerDelegateImpl.java:203) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.apply(DelegatingMetaTagHandler.java:120) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:312) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:371) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:350) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeFacelet(DefaultFaceletContext.java:199) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:174) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.facelets.impl.DefaultFacelet.apply(DefaultFacelet.java:161) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.buildView(FaceletViewHandlingStrategy.java:990) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:647) [jboss-jsf-api_2.2_spec-2.2.8.jar:2.2.8]
+	... 26 more
+Caused by: java.lang.IllegalStateException: Transaction already active
+	at org.hibernate.jpa.internal.TransactionImpl.begin(TransactionImpl.java:58) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at com.northwindx.bean.CategoriesBean.<init>(CategoriesBean.java:39) [classes:]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.8.0_05]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) [rt.jar:1.8.0_05]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [rt.jar:1.8.0_05]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408) [rt.jar:1.8.0_05]
+	at java.lang.Class.newInstance(Class.java:433) [rt.jar:1.8.0_05]
+	at com.sun.faces.mgbean.BeanBuilder.newBeanInstance(BeanBuilder.java:186) [jsf-impl-2.2.8-jbossorg-1.jar:]
+	... 65 more
+
+2015-03-26 22:38:04,811 ERROR [org.jboss.remoting.remote.connection] (XNIO-1 I/O-1) JBREM000200: Remote connection failed: java.io.IOException: An existing connection was forcibly closed by the remote host
