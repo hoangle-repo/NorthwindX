@@ -23,7 +23,9 @@
 										<tr>
 											<td><img class="imageView" src="resources/Products/#{product.productID}.jpg" alt="Image of #{product.productName}" /></td>
 											<td><p><a href="productDetails.xhtml?id=#{product.productID}">#{product.productName}</a><br />
-											#{product.unitPrice}<br />
+											<h:outputText value="#{product.unitPrice}">
+												<f:convertNumber type="number" pattern="$ 0.00"/>
+											</h:outputText><br />
 											#{product.quantityPerUnit}</p></td>
 										</tr>
 									</table>
@@ -37,7 +39,9 @@
 										<tr>
 											<td><img class="imageView" src="resources/Products/#{product.productID}.jpg" alt="Image of #{product.productName}" /></td>
 											<td><p><a href="productDetails.xhtml?id=#{product.productID}">#{product.productName}</a><br />
-											#{product.unitPrice}<br />
+											<h:outputText value="#{product.unitPrice}">
+												<f:convertNumber type="number" pattern="$ 0.00"/>
+											</h:outputText><br />
 											#{product.quantityPerUnit}</p></td>
 										</tr>
 									</table>

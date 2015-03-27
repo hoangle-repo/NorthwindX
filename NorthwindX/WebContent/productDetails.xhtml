@@ -19,7 +19,9 @@
 									<h:form id="addToCart">
 										<h3>#{productDetailsBean.product.productName}</h3>
 										<p>#{productDetailsBean.product.quantityPerUnit}</p>
-										<p><strong>#{productDetailsBean.product.unitPrice}</strong></p>
+										<p><strong><h:outputText value="#{productDetailsBean.product.unitPrice}">
+											<f:convertNumber type="number" pattern="$ 0.00"/>
+										</h:outputText></strong></p>
 										<c:if test="#{productDetailsBean.product.unitsInStock > 0}">
 											<p>Quantity: <select name="quantity">
 											<c:forEach var="i" begin="1" end="#{productDetailsBean.product.unitsInStock}">

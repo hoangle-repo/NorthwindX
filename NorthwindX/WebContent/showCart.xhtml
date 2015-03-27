@@ -21,8 +21,12 @@
 								<tr>
 									<td>#{cartItem.productName}</td>
 									<td>#{cartItem.quantity}</td>
-									<td>#{cartItem.unitPrice}</td>
-									<td>#{cartItem.totalPrice}</td>
+									<td><h:outputText value="#{cartItem.unitPrice}">
+										<f:convertNumber type="number" pattern="$ 0.00"/>
+									</h:outputText></td>
+									<td><h:outputText value="#{cartItem.totalPrice}">
+										<f:convertNumber type="number" pattern="$ 0.00"/>
+									</h:outputText></td>
 									<c:set var="totalPrice" value="#{totalPrice + cartItem.totalPrice}" />
 								</tr>
 							</c:forEach>
@@ -31,7 +35,9 @@
 								<td><strong>Subtotal</strong></td>
 								<td></td>
 								<td></td>
-								<td><h:outputText value="#{totalPrice}"/></td>
+								<td><h:outputText value="#{totalPrice}">
+									<f:convertNumber type="number" pattern="$ 0.00"/>
+								</h:outputText></td>
 							</tr>
 						</table>
 						<h:form>
