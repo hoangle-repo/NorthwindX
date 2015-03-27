@@ -143,13 +143,13 @@ public class Login {
 	    if (customer.getPassword().equals(password)) {
 		flag = true;
 
-		Cookie sessionIdCookie = new Cookie("sessionID", new Date().toString());
-		sessionIdCookie.setMaxAge(MAX_COOKIE_AGE);
+		Cookie tokenCookie = new Cookie("token", request.getSession().getId());
+		tokenCookie.setMaxAge(MAX_COOKIE_AGE);
 		Cookie usernameCookie = new Cookie("username", username);
 		usernameCookie.setMaxAge(MAX_COOKIE_AGE);
 
 		// Add cookies to response
-		response.addCookie(sessionIdCookie);
+		response.addCookie(tokenCookie);
 		response.addCookie(usernameCookie);
 
 		// Add password if remember me is checked
