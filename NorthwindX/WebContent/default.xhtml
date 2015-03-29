@@ -14,7 +14,7 @@
 					
 					<div class="table-Cell-Main center">
 					    <p>Northwind Traders is your value added supplier of quality foods and beverages.</p>
-						<h3 class="table-Cell-Main BlueTDHeader center">$pecial Deals.</h3>
+						<h3 class="table-Cell-Main BlueTDHeader center">Special Deals.</h3>
 						<table style="width:100%"> 
 							<tr>
 							<c:forEach var="product" items="#{specialDealsBean.productsList}" end="2">
@@ -24,7 +24,7 @@
 											<td><img class="imageView" src="resources/Products/#{product.productID}.jpg" alt="Image of #{product.productName}" /></td>
 											<td><p><a href="productDetails.xhtml?id=#{product.productID}">#{product.productName}</a><br />
 											<h:outputText value="#{product.unitPrice}">
-												<f:convertNumber type="number" pattern="$ 0.00"/>
+												<f:convertNumber type="number" pattern="$0.00"/>
 											</h:outputText><br />
 											#{product.quantityPerUnit}</p></td>
 										</tr>
@@ -40,7 +40,7 @@
 											<td><img class="imageView" src="resources/Products/#{product.productID}.jpg" alt="Image of #{product.productName}" /></td>
 											<td><p><a href="productDetails.xhtml?id=#{product.productID}">#{product.productName}</a><br />
 											<h:outputText value="#{product.unitPrice}">
-												<f:convertNumber type="number" pattern="$ 0.00"/>
+												<f:convertNumber type="number" pattern="$0.00"/>
 											</h:outputText><br />
 											#{product.quantityPerUnit}</p></td>
 										</tr>

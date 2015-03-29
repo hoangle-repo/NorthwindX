@@ -18,9 +18,9 @@
 				</div>			
 				<div class="table-Row">
 					<div class="table-Cell-Side LightBlueBack" />
-					<div class="table-Cell-Main center">
-						<c:forEach var="categories" items="#{categoriesBean.categoriesList}">
-							<a href="products.xhtml?id=#{categories.categoryID}">#{categories.categoryName}</a>
+					<div class="table-Cell-Main center LightBlueBack">
+						|<c:forEach var="categories" items="#{categoriesBean.categoriesList}">
+							<a href="products.xhtml?id=#{categories.categoryID}">#{categories.categoryName}</a> |
 						</c:forEach>
 					</div>
 					<div class="table-Cell-Side LightBlueBack" />

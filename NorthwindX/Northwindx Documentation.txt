@@ -20,7 +20,7 @@ Ideas to implement:
 	- prevent repeated session attack
 	- set authorization for roles
 2. Limit the number of login
-
+3. Add purchase page
 
 *******************************************************************************
 

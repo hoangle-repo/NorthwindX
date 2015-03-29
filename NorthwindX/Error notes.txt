@@ -1,4 +1,0 @@
-Errors and challenges encountered
-
-1. wildfly: deploy and wildfly: run didn't work
-2. Cookies are not deleted after browser exited

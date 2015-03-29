@@ -1,0 +1,18 @@
+Errors and challenges encountered
+
+1. wildfly: deploy and wildfly: run didn't work
+-> Solution:
+	- local host port 8080 is not available
+	- Need JDK 1.8 instead of JRE 1.8 in my run time environment because JRE doesnt contain tools.jar file
+	
+2. Cookies are not deleted after browser exited
+-> Solution:
+	- Need javascript on client side to detect it because on server side we can only use session time out
+	
+3. Why do we need web service for search while we already have server connects to the database?
+-> Solution:
+	- 
+	
+4. & doesn't work in href link
+-> Solution:
+	- &amp; replace & in href link because & is a special/funciton char in HTML/XML

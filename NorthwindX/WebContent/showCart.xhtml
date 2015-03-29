@@ -22,10 +22,10 @@
 									<td>#{cartItem.productName}</td>
 									<td>#{cartItem.quantity}</td>
 									<td><h:outputText value="#{cartItem.unitPrice}">
-										<f:convertNumber type="number" pattern="$ 0.00"/>
+										<f:convertNumber type="number" pattern="$0.00"/>
 									</h:outputText></td>
 									<td><h:outputText value="#{cartItem.totalPrice}">
-										<f:convertNumber type="number" pattern="$ 0.00"/>
+										<f:convertNumber type="number" pattern="$0.00"/>
 									</h:outputText></td>
 									<c:set var="totalPrice" value="#{totalPrice + cartItem.totalPrice}" />
 								</tr>
@@ -36,12 +36,12 @@
 								<td></td>
 								<td></td>
 								<td><h:outputText value="#{totalPrice}">
-									<f:convertNumber type="number" pattern="$ 0.00"/>
+									<f:convertNumber type="number" pattern="$0.00"/>
 								</h:outputText></td>
 							</tr>
 						</table>
 						<h:form>
-							<h:commandLink action="#{shoppingCartBean.clearCart}" title="Clear cart" value="Clear cart" />
+							<h:commandLink action="#{shoppingCartBean.clearCart}" title="Clear cart" value="Clear Cart" />
 						</h:form>
 					</div>
 					<div class="table-Cell-Side LightBlueBack" />

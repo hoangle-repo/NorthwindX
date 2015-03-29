@@ -2,7 +2,10 @@
 
 .MenuItem { font-size: xx-large; }
 
-a, a:visited { color: blue; }
+a, a:visited { 
+	color: blue; 
+	text-decoration: none;
+}
 a:hover { color: black; }
 
 .BlueTDHeader { background-color: #99CCFF; }
@@ -21,14 +24,14 @@ a:hover { color: black; }
 table, .table { margin: 0 auto; }
 .table {
 	display: table;
-	width:900px;
+	width:910px;
 }
 .table-Row { display:table-row; }
 .table-Cell, .table-Cell-Side, .table-Cell-Main { display: table-cell; }
 
 .table-Cell-Side { width: 100px; }
 .table-Cell-Main {
-	width:700px;
+	width:710px;
 	margin-left:2em;
 	padding:10px;
 }
@@ -46,8 +49,8 @@ table, .table { margin: 0 auto; }
 }
 
 .catTitle {
-	font-size: 5em;
-	margin: 0 0.67em 0 0.67em;
+	font-size: 4em;
+	margin: 0 0.57em 0 0.57em;
 	font-weight: bold; 
 }
 

@@ -9,9 +9,9 @@
 	        <h:form>
 	            <h:panelGrid columns="2" styleClass="loginTable" >
 	                <h:outputText value="Name" />
-	                <h:inputText value="#{loginBean.name}" />
+	                <h:inputText value="#{loginBean.name}" style="width:170px;"/>
 	                <h:outputText value="Password" />
-	                <h:inputSecret value="#{loginBean.password}" />
+	                <h:inputSecret value="#{loginBean.password}" style="width:170px;"/>
 	                <h:selectBooleanCheckbox value="#{loginBean.rememberMe}" /> Remember Me
 	                <h:commandButton value="Login" action="#{loginBean.validateLogin}" />
 	            </h:panelGrid>
