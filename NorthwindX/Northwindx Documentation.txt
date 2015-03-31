@@ -20,14 +20,15 @@ Ideas to implement:
 	- prevent repeated session attack
 	- set authorization for roles
 2. Limit the number of login
-3. Add purchase page
+3. Add checkout page
 
 *******************************************************************************
 
 *******************************************************************************
 Cookie:
-- sessionId - token
+- sessionId - token?
 - username
+- password?
 - expires
 
 *******************************************************************************
@@ -39,4 +40,29 @@ Explain Ideas:
 - On the client side, JQuery will go through all the url and read the urls
 and return search result to user
 
+*******************************************************************************
+
+*******************************************************************************
+Notes:
+
+1. Order: CustomerID and EmployeeID have insertable = false, updateable = false
+It means it is not the responsibility of the Order entity to update it.
+I took out insertable = false, updateable = false from CustomerID because when
+customer place order, it is Order entity's responsibility to update customerID
+EmployeeID has update and insert false because employees will have a management 
+system to update it
+
+TemporalType.TIMESTAMP support java.util.Calendar and java.util.Date
+
+2. com.sun.faces.config.ConfigureListener in web.xml giving warning:
+This ServletContextListener initializes the runtime environment
+of the JavaServer Faces Reference Implementation when a web
+application including it is initialized by the container.
+
+This listener is since JSF 1.x supposed to be automatically registered 
+by the jsf_core.tld tag library definition file.
+
+3. checkoutBean.order gives error upon submit
+-> need to initialize it because we use order.[setProperties()] so
+it cannot be null
 *******************************************************************************

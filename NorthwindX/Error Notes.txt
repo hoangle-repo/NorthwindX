@@ -9,10 +9,20 @@ Errors and challenges encountered
 -> Solution:
 	- Need javascript on client side to detect it because on server side we can only use session time out
 	
-3. Why do we need web service for search while we already have server connects to the database?
+3. Why do we need web service for search while we already have web server connects to the database?
 -> Solution:
-	- 
+	- We create a new rest web Service project that so that our web server can retrieve and modify information
+	Issue: Security?
+	-> Solution: add md5 checksum into the link so that only our client web Server that has the key
+	can access information
 	
 4. & doesn't work in href link
 -> Solution:
 	- &amp; replace & in href link because & is a special/functional char in HTML/XML
+
+5. Order has CustomerID property set to insertable=false and updateable = false
+-> Solution:
+	- Move it to relationship mapping many to one because we need to save customerID into ordertable
+	upon saving into table
+
+6. 

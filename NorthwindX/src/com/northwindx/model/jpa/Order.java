@@ -30,7 +30,7 @@ public class Order implements Serializable {
 	@Basic(optional = false)
 	@Column(name = "OrderID")
 	private int orderID;
-	@Column(name = "CustomerID", insertable = false, updatable = false)
+	@Column(name = "CustomerID")
 	private String customerID;
 	@Column(name = "EmployeeID", insertable = false, updatable = false)
 	private Integer employeeID;
@@ -59,7 +59,7 @@ public class Order implements Serializable {
 	private String shipPostalCode;
 	@Column(name = "ShipCountry")
 	private String shipCountry;
-	@JoinColumn(name = "CustomerID")
+	@JoinColumn(name = "CustomerID", insertable = false, updatable = false)
 	@ManyToOne
 	private Customer customer;
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "order")
@@ -122,12 +122,6 @@ public class Order implements Serializable {
 	public void setFreight(BigDecimal freight) {
 		this.freight = freight;
 	}
-	public String getShipName() {
-		return shipName;
-	}
-	public void setShipName(String shipName) {
-		this.shipName = shipName;
-	}
 	public String getShipAddress() {
 		return shipAddress;
 	}
@@ -175,6 +169,12 @@ public class Order implements Serializable {
 	}
 	public void setEmployee(Employee employee) {
 		this.employee = employee;
+	}
+	public void setShipName(String shipName) {
+		this.shipName = shipName;
+	}
+	public String getShipName() {
+		return shipName;
 	}
 	
 	@Override
