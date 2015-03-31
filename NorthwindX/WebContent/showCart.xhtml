@@ -28,6 +28,7 @@
 									<td><h:outputText value="#{cartItem.totalPrice}">
 										<f:convertNumber type="number" pattern="$0.00"/>
 									</h:outputText></td>
+									<td><a href="showCart.xhtml?faces-redirect=true&amp;remove=#{cartItem.productId}">Remove</a></td>
 									<c:set var="totalPrice" value="#{totalPrice + cartItem.totalPrice}" />
 								</tr>
 							</c:forEach>

@@ -27,8 +27,8 @@ import javax.faces.bean.ViewScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
-import com.northwindx.model.Login;
 import com.northwindx.model.ShoppingCart;
 import com.northwindx.model.ShoppingCartItem;
 
@@ -37,18 +37,31 @@ import com.northwindx.model.ShoppingCartItem;
 public class ShoppingCartBean {
 	private List<ShoppingCartItem> cart = ShoppingCart.getCart();
 	private String status;
-	
-	public ShoppingCartBean(){
-		ExternalContext context = (ExternalContext) FacesContext.getCurrentInstance().getExternalContext();
+
+	public ShoppingCartBean() {
+		ExternalContext context = (ExternalContext) FacesContext
+				.getCurrentInstance().getExternalContext();
 		HttpServletRequest request = (HttpServletRequest) context.getRequest();
-		if (request.getParameter("status") != null &&request.getParameter("status").equals("0")) {
+		if (request.getParameter("status") != null
+				&& request.getParameter("status").equals("0")) {
 			setStatus("Not Enough Unit In Stock");
 		}
+		if(request.getParameter("remove") != null){
+			removeItem(request.getParameter("remove"));
+		}
 	}
-	
+
 	public void clearCart() {
 		ShoppingCart.clearCart();
 		cart = ShoppingCart.getCart(); // Get the new cart
+	}
+
+	private void removeItem(String removeId) {
+		for (int i = 0;i<cart.size();i++) {
+			if ((cart.get(i).getProductId()+"").equals(removeId)) {
+				cart.remove(i);
+			}
+		}
 	}
 
 	public List<ShoppingCartItem> getCart() {
