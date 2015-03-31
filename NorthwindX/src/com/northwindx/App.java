@@ -27,10 +27,6 @@ public class App {
 //		    }else{
 //		    System.out.println("False out");
 //		    }
-		List<Customer> customerList = em.createQuery("from Customer", Customer.class).getResultList();
-		for (Customer customer : customerList) {
-			System.out.println(customer);
-		}
 		
 //		Customer johnny = new Customer();
 //		johnny.setCustomerID("APPLE");

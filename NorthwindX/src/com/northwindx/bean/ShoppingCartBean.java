@@ -23,7 +23,6 @@ import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
-
 import com.northwindx.model.ShoppingCart;
 import com.northwindx.model.ShoppingCartItem;
 
@@ -43,7 +42,7 @@ public class ShoppingCartBean {
 
 	public String setCart(List<ShoppingCartItem> cart) {
 		this.cart = cart;
-		
+
 		return "";
 	}
 }

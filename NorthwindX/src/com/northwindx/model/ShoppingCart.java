@@ -89,7 +89,7 @@ public class ShoppingCart {
 	public static void clearCart() {
 		HttpServletRequest request = (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
 		HttpSession session = request.getSession();
-
+		
 		cart = new ArrayList<>();
 		session.setAttribute("cart", cart);
 	}

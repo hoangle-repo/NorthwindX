@@ -13,7 +13,8 @@
 	                <h:outputText value="Password" />
 	                <h:inputSecret value="#{loginBean.password}" style="width:170px;"/>
 	                <h:selectBooleanCheckbox value="#{loginBean.rememberMe}" /> Remember Me
-	                <h:commandButton value="Login" action="#{loginBean.validateLogin}" />
+	                <h:commandButton value="Login" action="#{loginBean.validateLogin}" style="width:60px"/>
+	                <h:commandButton action="addCustomer?faces-redirect=true" value="Register" />
 	            </h:panelGrid>
 	        </h:form>
 	    </ui:define>

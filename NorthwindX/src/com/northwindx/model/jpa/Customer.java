@@ -10,6 +10,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
 @Table(name = "Customers")
@@ -46,6 +50,8 @@ public class Customer implements Serializable {
 	private String phone;
 	@Column(name = "Fax")
 	private String fax;
+	@Column(name = "Role")
+	private String role;
 
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "customer")
 	private Collection<Order> Orders;
@@ -135,6 +141,12 @@ public class Customer implements Serializable {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public void setRole(String role) {
+		this.role = role;
+	}
+	public String getRole() {
+		return role;
 	}
 	
 	@Override

@@ -26,13 +26,17 @@ Ideas to implement:
 
 *******************************************************************************
 Cookie:
-- sessionId
+- sessionId - token
 - username
 - expires
 
 *******************************************************************************
 
 *******************************************************************************
-
+Explain Ideas:
+1. Search page implemented
+- Create webservice that return customer json url
+- On the client side, JQuery will go through all the url and read the urls
+and return search result to user
 
 *******************************************************************************

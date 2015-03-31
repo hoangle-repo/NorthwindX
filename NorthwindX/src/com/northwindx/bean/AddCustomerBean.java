@@ -44,6 +44,7 @@ public class AddCustomerBean {
 
 	public String submitChanges() {
 		tempCustomer.setPassword("password");  // (Over)write any set password to make all customers' passwords uniform
+		tempCustomer.setRole("USER");
 		EntityManager em = PersistenceUtil.getEntityManager();
 		em.getTransaction().begin();
 		em.persist(tempCustomer);

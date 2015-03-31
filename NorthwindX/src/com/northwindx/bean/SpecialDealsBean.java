@@ -52,7 +52,7 @@ public class SpecialDealsBean {
 
 			Statement stmt = null;
 			// Query to get the top 6 products by UnitsInStock from the database.
-			String query = "SELECT TOP (6) * FROM Products ORDER BY UnitsInStock";
+			String query = "SELECT TOP (6) * FROM Products ORDER BY UnitsInStock DESC";
 
 			stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery(query); 
