@@ -4,89 +4,65 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:t="http://myfaces.apache.org/trinidad">
+	xmlns:f="http://java.sun.com/jsf/core">
 <h:body>
-	<script>
-        $(function() {
-            $("#requiredDate").datepicker();
-        });
-    </script>
 	<ui:composition template="template/common/commonLayout.xhtml">
 		<ui:define name="content">
 			<div class="table-Row">
 				<div class="table-Cell-Side LightBlueBack" />
 				<div class="table-Cell-Main center">
-					<h:message for="CompanyName" errorStyle="color:red; display:block"></h:message>
-					<h:message for="Name" errorStyle="color:red; display:block"></h:message>
-					<h:form id="editCustomer">
+					<form id="searchDetails">
 						<table width="90%">
 							<tr>
-								<td width="20%" class="right DarkBlueBack"></td>
-								<td width="40%" class="left DarkBlueBack">Shipment Details</td>
-								<td width="40%" class="right DarkBlueBack"></td>
+								<td width="20%" class="right BlueTDHeader">CustomerID:</td>
+								<td class="left"><input type="text" id="customerID"
+									name="customerID" class="inputText" /></td>
 							</tr>
 							<tr>
-								<td class="right BlueTDHeader">Required Date</td>
-								<td class="left"><h:inputText id="requiredDate"
-										name="requiredDate" value="${checkoutBean.order.requiredDate}"
-										required="true" requiredMessage="Missing Date">
-										<f:convertDateTime pattern="yyyy-mm-dd" />
-									</h:inputText></td>
-								<td><h:message for="requiredDate" style="color:red"/></td>
+								<td class="right BlueTDHeader">CompanyName</td>
+								<td class="left"><input type="text" id="companyName"
+									name="companyName" class="inputText" /></td>
 							</tr>
 							<tr>
-								<td class="right BlueTDHeader">Shipment Method</td>
-								<td class="left"><h:selectOneMenu Width="250"
-										name="shipVia" value="#{checkoutBean.order.shipVia}"
-										converter="javax.faces.Integer">
-										<f:selectItem itemValue="1" itemLabel="Speedy Express" />
-										<f:selectItem itemValue="2" itemLabel="United Package" />
-										<f:selectItem itemValue="3" itemLabel="Federal Shipping" />
-									</h:selectOneMenu></td>
+								<td class="right BlueTDHeader">ContactName</td>
+								<td class="left"><input type="text" id="contactName"
+									name="contactName" class="inputText" /></td>
 							</tr>
 							<tr>
-								<td class="right BlueTDHeader">Ship To</td>
-								<td class="left"><h:inputText id="shipName" name="shipName"
-										value="#{checkoutBean.order.shipName}" BorderWidth="1"
-										Width="250" required="true"
-										requiredMessage="Missing Receiver Name" /></td>
-								<td><h:message for="shipName" style="color:red" /></td>
+								<td class="right BlueTDHeader">ContactTitle</td>
+								<td class="left"><input type="text" id="contactTitle"
+									name="contactTitle" class="inputText" /></td>
+							</tr>
+							<tr>
+								<td class="right BlueTDHeader">Email</td>
+								<td class="left"><input type="text" id="email" name="email"
+									class="inputText" /></td>
 							</tr>
 							<tr>
 								<td class="right BlueTDHeader">Address</td>
-								<td class="left"><h:inputText id="shipAddress"
-										name="shipAddress" value="#{checkoutBean.order.shipAddress}"
-										BorderWidth="1" Width="250" required="true"
-										requiredMessage="Missing Shipping Address" /></td>
-								<td><h:message for="shipAddress" style="color:red" /></td>
+								<td class="left"><input type="text" id="address"
+									name="address" class="inputText" /></td>
 							</tr>
 							<tr>
 								<td class="right BlueTDHeader">City</td>
-								<td class="left"><h:inputText id="shipCity" name="shipCity"
-										value="#{checkoutBean.order.shipCity}" BorderWidth="1"
-										Width="250" required="true" requiredMessage="Missing City" /></td>
-								<td><h:message for="shipCity" style="color:red" /></td>
+								<td class="left"><input type="text" id="city" name="city"
+									class="inputText" /></td>
 							</tr>
 							<tr>
 								<td class="right BlueTDHeader">Region</td>
-								<td class="left"><h:inputText name="shipRegion"
-										value="#{checkoutBean.order.shipRegion}" BorderWidth="1"
-										Width="250" /></td>
+								<td class="left"><input type="text" id="region"
+									name="region" class="inputText" /></td>
 							</tr>
 							<tr>
 								<td class="right BlueTDHeader">PostalCode</td>
-								<td class="left"><h:inputText id="shipPostalCode"
-										name="shipPostalCode"
-										value="#{checkoutBean.order.shipPostalCode}" BorderWidth="1"
-										Width="250" required="true"
-										requiredMessage="Missing Postal Code" /></td>
-								<td><h:message for="shipPostalCode" style="color:red" /></td>
+								<td class="left"><input type="text" id="postalCode"
+									name="postalCode" class="inputText" /></td>
 							</tr>
 							<tr>
 								<td class="right BlueTDHeader">Country</td>
-								<td class="left"><h:selectOneMenu Width="250"
-										name="shipCountry" value="#{checkoutBean.order.shipCountry}">
+								<td class="left"><h:selectOneMenu Width="250" id="country"
+										name="country">
+										<f:selectItem itemValue="XX" itemLabel="Select Country" />
 										<f:selectItem itemValue="Afghanistan" itemLabel="Afghanistan" />
 										<f:selectItem itemValue="Albania" itemLabel="Albania" />
 										<f:selectItem itemValue="Algeria" itemLabel="Algeria" />
@@ -391,17 +367,35 @@
 									</h:selectOneMenu></td>
 							</tr>
 							<tr>
+								<td class="right BlueTDHeader">Phone</td>
+								<td class="left"><input type="text" id="phone" name="phone"
+									class="inputText" /></td>
+							</tr>
+							<tr>
+								<td class="right BlueTDHeader">Fax</td>
+								<td class="left"><input type="text" id="fax" name="fax"
+									class="inputText" /></td>
+							</tr>
+							<tr>
 								<td class="right BlueTDHeader">&nbsp;</td>
-								<td class="left BlueTDHeader"><h:commandButton
-										value="Place Order" action="#{checkoutBean.checkout}" /></td>
-								<td class="BlueTDHeader">&nbsp;</td>
+								<td class="left BlueTDHeader">
+									<button id="getCustomer">Get Customer</button>
+									<button id="create">Create</button>
+									<button id="update">Update</button>
+									<button id="delete">Delete Customer</button>
+									
+								</td>
 							</tr>
 						</table>
-					</h:form>
+					</form>
 				</div>
 				<div class="table-Cell-Side LightBlueBack" />
 			</div>
+			<script
+				src="resources/js/jquery-1.11.2.min.js"></script>
+			<script src="resources/js/search.js"></script>
 		</ui:define>
 	</ui:composition>
+
 </h:body>
 </html>

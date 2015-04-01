@@ -45,35 +45,38 @@ public class CheckoutBean {
 		Customer customer = Login.getLoggedInUser();
 
 		em.getTransaction().begin();
-		order.setCustomerID(customer.getCustomerID());
+		order.setCustomer(customer);
 		order.setOrderDate(new Date());
 		em.persist(order);
+		em.getTransaction().commit();
+
+		em.getTransaction().begin();
 
 		// Add each OrderDetail into the table
 		List<ShoppingCartItem> cartItems = ShoppingCart.getCart();
-		for (int i = 0; i < cartItems.size(); i++) {
+		for (ShoppingCartItem item : cartItems) {
 			OrderDetail orderDetail = new OrderDetail();
 			orderDetail.setOrderDetailsPK(new OrderDetailPK(order.getOrderID(),
-					cartItems.get(i).getProductId()));
-			orderDetail.setQuantity((short) cartItems.get(i).getQuantity());
-			orderDetail.setUnitPrice(cartItems.get(i).getUnitPrice());
+					item.getProductId()));
+			orderDetail.setQuantity((short) item.getQuantity());
+			orderDetail.setUnitPrice(item.getUnitPrice());
 			orderDetail.setDiscount(0);
-
+			orderDetail.setOrder(order);
 			Product tempProduct = (Product) em
 					.createQuery("from Product p where p.productID like :id")
-					.setParameter("id",
-							orderDetail.getOrderDetailsPK().getProductID())
-					.getResultList().get(0);
+					.setParameter("id", item.getProductId()).getSingleResult();
+			orderDetail.setProduct(tempProduct);
+			
 			if (tempProduct.getUnitsInStock() < orderDetail.getQuantity()) {
 				doCommit = false;
 				break;
 			} else {
 				em.persist(orderDetail);
-				tempProduct.setUnitsInStock((short) (tempProduct.getUnitsInStock()-orderDetail.getQuantity()));
+				tempProduct.setUnitsInStock((short) (tempProduct
+						.getUnitsInStock() - orderDetail.getQuantity()));
 			}
 		}
-		
-		
+
 		if (doCommit) {
 			em.getTransaction().commit();
 			ShoppingCart.clearCart();

@@ -30,7 +30,7 @@ public class Order implements Serializable {
 	@Basic(optional = false)
 	@Column(name = "OrderID")
 	private int orderID;
-	@Column(name = "CustomerID")
+	@Column(name = "CustomerID", insertable = false, updatable = false)
 	private String customerID;
 	@Column(name = "EmployeeID", insertable = false, updatable = false)
 	private Integer employeeID;
@@ -59,7 +59,7 @@ public class Order implements Serializable {
 	private String shipPostalCode;
 	@Column(name = "ShipCountry")
 	private String shipCountry;
-	@JoinColumn(name = "CustomerID", insertable = false, updatable = false)
+	@JoinColumn(name = "CustomerID")
 	@ManyToOne
 	private Customer customer;
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "order")

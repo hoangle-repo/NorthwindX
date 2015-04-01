@@ -45,7 +45,7 @@
 						<h:form>
 							<h:commandLink action="#{shoppingCartBean.clearCart}" title="Clear cart" value="Clear Cart" />
 							<c:if test="#{shoppingCartBean.cart.size()!=0}">
-								<h:commandButton action="checkout?faces-redirect=true" title="Checkout" value="Checkout" style="margin-left:320px"/>
+								<h:commandButton action="checkout?faces-redirect=true" value="Proceed to Checkout" style="margin-left:320px"/>
 							</c:if>
 						</h:form>
 					</div>

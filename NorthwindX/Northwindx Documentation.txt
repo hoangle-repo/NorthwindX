@@ -19,8 +19,6 @@ Ideas to implement:
 1. Add security layer for project
 	- prevent repeated session attack
 	- set authorization for roles
-2. Limit the number of login
-3. Add checkout page
 
 *******************************************************************************
 
@@ -37,8 +35,8 @@ Cookie:
 Explain Ideas:
 1. Search page implemented
 - Create webservice that return customer json url
-- On the client side, JQuery will go through all the url and read the urls
-and return search result to user
+- On the client side, JQuery will send request to url and grab json data
+to distribute for components on the search page
 
 *******************************************************************************
 

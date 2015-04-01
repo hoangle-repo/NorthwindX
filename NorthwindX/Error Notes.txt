@@ -25,4 +25,12 @@ Errors and challenges encountered
 	- Move it to relationship mapping many to one because we need to save customerID into ordertable
 	upon saving into table
 
-6. 
+6. REST web service is not necessarily need WADL and WSDL because it is "self-describe"
+-> "self-descibe" means:
+	- through HTTP OPTIONS request, web service deliver document describing all relevant resources
+
+7. Request json data at localhost:8080 fails to execute
+-> Chrome has security that prevents user to use local custom javascript files
+
+8. PUT request doesn't work
+-> A lot of major webbrowsers doesn't support put and delete, so we can use get and post instead
