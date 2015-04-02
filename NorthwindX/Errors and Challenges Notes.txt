@@ -9,7 +9,7 @@ Errors and challenges encountered
 -> Solution:
 	- Need javascript on client side to detect it because on server side we can only use session time out
 	
-3. Why do we need web service for search while we already have web server connects to the database?
+3. Why do we need web service for search while we already had web server connected to the database?
 -> Solution:
 	- We create a new rest web Service project that so that our web server can retrieve and modify information
 	Issue: Security?
@@ -22,8 +22,7 @@ Errors and challenges encountered
 
 5. Order has CustomerID property set to insertable=false and updateable = false
 -> Solution:
-	- Move it to relationship mapping many to one because we need to save customerID into ordertable
-	upon saving into table
+	- set customer to current customer
 
 6. REST web service is not necessarily need WADL and WSDL because it is "self-describe"
 -> "self-descibe" means:
@@ -37,3 +36,12 @@ Errors and challenges encountered
 
 9. onclick return false
 -> to prevent default action of event or to prevent propagation of event of ancestor elements
+
+10. href="" will leave the page and go back to root url
+-> solution: href="#" make it point an id in the same page
+
+11. Click(), and live('click') doesn't work on appended data
+-> Solution: Because when I bind my event to a tags, it is not available to DOM (right click view source,
+search result is not in there). Therefore, it is not bound to to DOM. To solve this problem:
+	- we use event-delegation
+	- on() will bind event to a tags

@@ -1,39 +1,34 @@
-// This is a variable to track the most current clicked customerId
-var currentId = null;
-
-// Handle search button
-$('#searchBtn').click(function() {
-	search($('#keyword').val());
-	return false;
-});
-
-$('#customerList a').live('click', function() {
-	alert($(this).data('identity'));
-//	searchByCustomerID($(this).attr('#data-identity'));
-});
-
 // Handle submit create
 // $('#update').click(function() {
 // updateCustomer();
 // return false;
 // });
 //
-// $('#delete').click(function() {
-//
-// return false;
-// });
-
-// Handle click action on getCustomer button
-$('#getCustomer').click(function() {
-	searchByCustomerID();
-	return false;
-});
 
 // // Create
 // $('#create').click(function(){
 // addCustomer();
 // return false;
 // });
+$(document).ready(function() {
+
+	// Handle search button
+	$('#searchBtn').click(function() {
+		search($('#keyword').val());
+		return false;
+	});
+
+	// Handle click event on each search result
+	$('#customerList').on('click', 'a', function() {
+		searchByCustomerID($(this).data('cid'));
+	});
+
+	// Handle delete button
+	$('#delete').click(function() {
+
+		return false;
+	});
+});
 
 // Search function
 function search(keyword) {
@@ -76,23 +71,24 @@ function getByKeyword(keyword) {
 }
 
 // Display the data onto screen
-function displayList(data){
-	var list; 
-	if(data == null){
+function displayList(data) {
+	var list;
+	if (data == null) {
 		// If no data return, return null array
 		list = [];
-	} else{
+	} else {
 		// If one result return, return the data, else return array
-		list = data instanceof Array ? data : [data];
+		list = data instanceof Array ? data : [ data ];
 	}
 
-	// Delete all search data when start a new search
+	// Delete all previous search data when start a new search
 	$('#customerList li').remove();
 	$.each(list, function(index, customer) {
-		$('#customerList').append('<li><a href="#"data-identity="' + customer.customerID + '">'+customer.contactName+'</a></li>');
+		$('#customerList').append(
+				'<li><a href="#" data-cid="' + customer.customerID + '">'
+						+ customer.contactName + '</a></li>');
 	});
 };
-
 
 // This function allow user to get detail information of a customer by providing
 // customerID
