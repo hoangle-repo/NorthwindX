@@ -1,5 +1,6 @@
 package com.northwindx.bean;
 
+import java.time.temporal.Temporal;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -8,6 +9,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
+import javax.persistence.TemporalType;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 

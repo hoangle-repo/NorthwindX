@@ -34,3 +34,6 @@ Errors and challenges encountered
 
 8. PUT request doesn't work
 -> A lot of major webbrowsers doesn't support put and delete, so we can use get and post instead
+
+9. onclick return false
+-> to prevent default action of event or to prevent propagation of event of ancestor elements

@@ -12,11 +12,20 @@
 				<div class="table-Cell-Side LightBlueBack" />
 				<div class="table-Cell-Main center">
 					<form id="searchDetails">
-						<table width="90%">
+						<p>Search for a customer or company by name:</p>
+						<p>
+							<input type="text" name="keyword" id="keyword"/>
+							<input type="submit" value="Search" id="searchBtn"/>
+						</p>
+						<div class="searchResultList" >
+							<ul id="customerList">
+							</ul>
+						</div>
+						<table style="padding-left: 15px;">
 							<tr>
 								<td width="20%" class="right BlueTDHeader">CustomerID:</td>
 								<td class="left"><input type="text" id="customerID"
-									name="customerID" class="inputText" /></td>
+									name="customerID" class="inputText" disabled="true" /></td>
 							</tr>
 							<tr>
 								<td class="right BlueTDHeader">CompanyName</td>
@@ -377,22 +386,16 @@
 									class="inputText" /></td>
 							</tr>
 							<tr>
-								<td class="right BlueTDHeader">&nbsp;</td>
+								<!-- td class="right BlueTDHeader">&nbsp;</td>
 								<td class="left BlueTDHeader">
-									<button id="getCustomer">Get Customer</button>
-									<button id="create">Create</button>
-									<button id="update">Update</button>
-									<button id="delete">Delete Customer</button>
-									
-								</td>
+								</td-->
 							</tr>
 						</table>
 					</form>
 				</div>
 				<div class="table-Cell-Side LightBlueBack" />
 			</div>
-			<script
-				src="resources/js/jquery-1.11.2.min.js"></script>
+			<script src="resources/js/jquery-1.11.2.min.js"></script>
 			<script src="resources/js/search.js"></script>
 		</ui:define>
 	</ui:composition>
