@@ -6,14 +6,17 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import com.northwindx.model.jpa.Customer;
+import com.northwindx.util.Constants;
 import com.northwindx.util.PersistenceUtil;
 
 public class App {
 
 	public static void main(String[] args) {
+		System.out.println(Constants.createMD5("password").length());
 		
-		EntityManager em = PersistenceUtil.getEntityManager();
-		em.getTransaction().begin();
+		
+//		EntityManager em = PersistenceUtil.getEntityManager();
+//		em.getTransaction().begin();
 //		Query query = em.createQuery("select c from Customers c where CustomerID = :customerId",Customer.class);
 //		    query.setParameter("customerId", "ALFKI");
 //		    List<Customer> list = query.getResultList();
@@ -28,31 +31,8 @@ public class App {
 //		    System.out.println("False out");
 //		    }
 		
-//		Customer johnny = new Customer();
-//		johnny.setCustomerID("APPLE");
-//		johnny.setContactName("Johnny Appleseed");
-//		johnny.setCompanyName("Apples R Us");
-//		em.persist(johnny);
-		
-//		Customer johnny = em.find(Customer.class, "APPLE");
-//		System.out.println(johnny);
-//		johnny.setCountry("United States");
-//		johnny.setPassword("password");
-		
-//		em.find(Customer.class, "APPLE");
-//		Customer johnnyClone = new Customer();
-//		johnnyClone.setCustomerID("APPLE");
-//		johnnyClone.setContactName("Johnny Orangeseed");
-//		johnnyClone.setCompanyName("Orange You Glad We're Not Apples");
-//		johnnyClone = em.merge(johnnyClone);
-//		johnnyClone.setCompanyName("Glorious Oranges");
-		
-//		Customer johnny = em.find(Customer.class, "APPLE");
-//		em.remove(johnny);
-		
-		
-		em.getTransaction().commit();
-		em.close();
+//		em.getTransaction().commit();
+//		em.close();
 	}
 	
 	/**

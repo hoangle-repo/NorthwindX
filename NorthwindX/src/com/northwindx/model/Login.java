@@ -19,9 +19,6 @@
  *************************************************************************/
 package com.northwindx.model;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Date;
 import java.util.List;
 
 import javax.faces.context.ExternalContext;
@@ -30,8 +27,10 @@ import javax.persistence.EntityManager;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.northwindx.model.jpa.Customer;
+import com.northwindx.util.Constants;
 import com.northwindx.util.PersistenceUtil;
 
 public class Login {
@@ -52,7 +51,6 @@ public class Login {
 	public static Customer getLoggedInUser() {
 		Customer customer = null;
 		String usernameValue = null;
-		String passwordValue = null;
 
 		// Get the request
 		ExternalContext context = (ExternalContext) FacesContext
@@ -63,16 +61,11 @@ public class Login {
 		Cookie[] cookies = request.getCookies();
 
 		if (cookies != null) {
-			// Set username and password if user logged in
 			for (int i = 0; i < cookies.length; i++) {
-				// Set usernameValue
+
+				// Get username cookie
 				if (cookies[i].getName().equals("username")) {
 					usernameValue = cookies[i].getValue();
-				}
-
-				// Set passwordValue
-				if (cookies[i].getName().equals("password")) {
-					passwordValue = cookies[i].getValue();
 				}
 			}
 
@@ -80,10 +73,6 @@ public class Login {
 			if (usernameValue != null) {
 				customer = new Customer();
 				customer.setCustomerID(usernameValue);
-
-				if (passwordValue != null) {
-					customer.setPassword(passwordValue);
-				}
 			}
 		}
 
@@ -133,35 +122,22 @@ public class Login {
 				.getCurrentInstance().getExternalContext();
 		HttpServletResponse response = (HttpServletResponse) context
 				.getResponse();
-		HttpServletRequest request = (HttpServletRequest) context.getRequest();
 
 		// Check user
 		EntityManager em = PersistenceUtil.getEntityManager();
 		em.getTransaction().begin();
-		List<Customer> list = em
-				.createQuery("from Customer c where c.customerID like :Id",
-						Customer.class)
-				.setParameter("Id", username.toUpperCase()).getResultList();
-		if (list.size() != 0) {
-			Customer customer = list.get(0);
-			if (customer.getPassword().equals(password)) {
+		Customer customer = em.find(Customer.class, username);
+		if (customer!=null) {
+			
+			// Do MD5 checksum for password and compare with password from database
+			if (customer.getPassword().equals(Constants.createMD5(password))) {
 				flag = true;
-
-				// Cookie tokenCookie = new Cookie("token",
-				// request.getSession().getId());
-				// tokenCookie.setMaxAge(MAX_COOKIE_AGE);
-				Cookie usernameCookie = new Cookie("username", username);
-				usernameCookie.setMaxAge(MAX_COOKIE_AGE);
-
-				// Add cookies to response
-				// response.addCookie(tokenCookie);
-				response.addCookie(usernameCookie);
-
-				// Add password if remember me is checked
 				if (rememberMe) {
-					Cookie passwordCookie = new Cookie("password", password);
-					passwordCookie.setMaxAge(MAX_COOKIE_AGE);
-					response.addCookie(passwordCookie);
+					Cookie usernameCookie = new Cookie("username", username);
+					usernameCookie.setMaxAge(MAX_COOKIE_AGE);
+
+					// Add cookies to response
+					response.addCookie(usernameCookie);
 				}
 			} else {
 				flag = false;
@@ -182,14 +158,20 @@ public class Login {
 				.getCurrentInstance().getExternalContext();
 		HttpServletResponse response = (HttpServletResponse) context
 				.getResponse();
-		HttpServletRequest resquest = (HttpServletRequest) context.getRequest();
-		Cookie[] cookies = resquest.getCookies();
+		HttpServletRequest request = (HttpServletRequest) context.getRequest();
+		Cookie[] cookies = request.getCookies();
 
 		// Delete cookies
 		for (int i = 0; i < cookies.length; i++) {
 			Cookie cookie = cookies[i];
 			cookie.setMaxAge(0);
 			response.addCookie(cookie);
+		}
+
+		// invalidate the session if exists
+		HttpSession session = request.getSession(false);
+		if (session != null) {
+			session.invalidate();
 		}
 	}
 }

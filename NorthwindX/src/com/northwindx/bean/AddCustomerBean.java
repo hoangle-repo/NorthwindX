@@ -24,6 +24,7 @@ import javax.faces.bean.RequestScoped;
 import javax.persistence.EntityManager;
 
 import com.northwindx.model.jpa.Customer;
+import com.northwindx.util.Constants;
 import com.northwindx.util.PersistenceUtil;
 
 @ManagedBean
@@ -31,6 +32,7 @@ import com.northwindx.util.PersistenceUtil;
 public class AddCustomerBean {
 
 	private Customer tempCustomer = new Customer();
+	private String status = "";
 
 	public AddCustomerBean() { }
 
@@ -43,14 +45,32 @@ public class AddCustomerBean {
 	}
 
 	public String submitChanges() {
-		tempCustomer.setPassword("password");  // (Over)write any set password to make all customers' passwords uniform
+		tempCustomer.setPassword(Constants.createMD5("password"));  // (Over)write any set password to make all customers' passwords uniform
 		tempCustomer.setRole("USER");
+		tempCustomer.setCustomerID(tempCustomer.getCustomerID().toUpperCase());
 		EntityManager em = PersistenceUtil.getEntityManager();
-		em.getTransaction().begin();
-		em.persist(tempCustomer);
-		em.getTransaction().commit();
+		String redirectString = "";
 		
-		return "login?faces-redirect=true";
+		em.getTransaction().begin();
+		Customer customer = em.find(Customer.class, tempCustomer.getCustomerID());
+		if(customer== null){
+			redirectString = "login?faces-redirect=true";
+			em.persist(tempCustomer);
+		} else {
+			redirectString = "addCustomer.xhtml";
+			setStatus("Customer ID is not available");
+		}
+		
+		em.getTransaction().commit();
+		return redirectString;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 }
