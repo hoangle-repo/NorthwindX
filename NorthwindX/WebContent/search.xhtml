@@ -12,10 +12,11 @@
 				<div class="table-Cell-Side LightBlueBack" />
 				<div class="table-Cell-Main center">
 					<form id="searchDetails">
-						<p>Search for a customer or company by name:</p>
+						<p>Search for Customers or Companies:</p>
 						<p>
 							<input type="text" name="keyword" id="keyword"/>
 							<input type="submit" value="Search" id="searchBtn"/>
+							<input type="button" value="Clear" id="refresh"/>
 						</p>
 						<div class="searchResultList" >
 							<ul id="customerList">
@@ -25,7 +26,7 @@
 							<tr>
 								<td width="20%" class="right BlueTDHeader">CustomerID:</td>
 								<td class="left"><input type="text" id="customerID"
-									name="customerID" class="inputText" disabled="true" /></td>
+									name="customerID" class="inputText" disabled="false" /></td>
 							</tr>
 							<tr>
 								<td class="right BlueTDHeader">CompanyName</td>
@@ -391,9 +392,10 @@
 								</td-->
 							</tr>
 						</table>
-						<button id="update">Update</button>
-						<button id="delete">Delete</button>
-						<button id="create">Create</button>
+						<input type="button" value="Update" id="update"/>
+						<input type="button" value="Delete" id="delete"/>
+						<input type="button" value="Clear" id="clear"/>
+						<input type="button" value="Create New Customer" id="create"/>
 					</form>
 				</div>
 				<div class="table-Cell-Side LightBlueBack" />

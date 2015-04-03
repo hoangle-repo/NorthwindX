@@ -45,3 +45,6 @@ Errors and challenges encountered
 search result is not in there). Therefore, it is not bound to to DOM. To solve this problem:
 	- we use event-delegation
 	- on() will bind event to a tags
+
+12. Update not working but still return successful message
+-> Customer is saved in browser cache. Therefore, we have to clear cache in order for it to display new data

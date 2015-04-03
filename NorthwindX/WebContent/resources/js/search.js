@@ -1,17 +1,23 @@
-// Handle submit create
-// $('#update').click(function() {
-// updateCustomer();
-// return false;
-// });
-//
+/*
+ * Author: Hoang Le
+ * Project: NorthwindX
+ */
 
-// // Create
-// $('#create').click(function(){
-// addCustomer();
-// return false;
-// });
 $(document).ready(function() {
-
+	/*
+	 * This variable is used to track previous search term
+	 * It is used in delete method in order to update search result list
+	 * upon a record is deleted
+	 */
+	var previousKeyword = $('#keyword').val();
+	
+	// Hide buttons when no customer selected
+	$('#update').hide();
+	$('#delete').hide();
+	$('#clear').hide();
+	$('#customerID').attr('disabled',false);
+	$('#create').show();
+	
 	// Handle search button
 	$('#searchBtn').click(function() {
 		search($('#keyword').val());
@@ -20,24 +26,80 @@ $(document).ready(function() {
 
 	// Handle click event on each search result
 	$('#customerList').on('click', 'a', function() {
+		
+		// Show buttons when a customer selected
+		$('#create').hide();
+		$('#update').show();
+		$('#delete').show();
+		$('#clear').show();
+		$('#customerID').attr('disabled',true);
+		
+		// Get customer data
 		searchByCustomerID($(this).data('cid'));
 	});
 
 	// Handle delete button
 	$('#delete').click(function() {
-
+		deleteCustomer()
 		return false;
+	});
+
+	// Handle submit button
+	$('#update').click(function() {
+		updateCustomer();
+		return false;
+	});
+	
+	$('#create').click(function(){
+		addCustomer();
+		return false;
+	});
+
+	// Clear the form
+	$('#clear').click(function(){
+		
+		// Hide buttons upon clearing data
+		$('#update').hide();
+		$('#delete').hide();
+		$('#customerID').attr('disabled',false);
+		$('#clear').hide();
+		$('#create').show();
+		
+		// Clear form
+		clear();
+		return false;
+	});
+	
+	// Clear the search result by refreshing the page
+	$('#refresh').on('click',function(){
+		window.location.href="search.xhtml";
 	});
 });
 
+function clear(){
+	$('#customerID').val("");
+	$('#companyName').val("");
+	$('#contactName').val("");
+	$('#contactTitle').val("");
+	$('#email').val("");
+	$('#address').val("");
+	$('#city').val("");
+	$('#region').val("");
+	$('#postalCode').val("");
+	$('#country').val("Select Country");
+	$('#phone').val("");
+	$('#fax').val("");
+};
+
 // Search function
 function search(keyword) {
+	previousKeyword = keyword;
 	if (keyword == '') {
 		getAll();
 	} else {
 		getByKeyword(keyword);
 	}
-};
+}
 
 // get all customers
 function getAll() {
@@ -61,6 +123,7 @@ function getByKeyword(keyword) {
 		url : 'http://localhost:8080/NorthwindXWS/rest/customers/search/'
 				+ keyword,
 		dataType : 'json',
+		cache: false,
 		success : function(data) {
 			displayList(data);
 		},
@@ -88,7 +151,7 @@ function displayList(data) {
 				'<li><a href="#" data-cid="' + customer.customerID + '">'
 						+ customer.contactName + '</a></li>');
 	});
-};
+}
 
 // This function allow user to get detail information of a customer by providing
 // customerID
@@ -98,6 +161,7 @@ function searchByCustomerID(customerID) {
 		url : 'http://localhost:8080/NorthwindXWS/rest/customers/customerID/'
 				+ customerID,
 		dataType : 'json',
+		cache: false,
 		success : function(data) {
 			renderJSONCustomer(data);
 		},
@@ -121,67 +185,83 @@ function findById() {
 		}
 	});
 }
-//
-// function addCustomer() {
-// $.ajax({
-// type : 'POST',
-// contentType : 'application/json; charset=utf-8',
-// url : 'http://localhost:8080/NorthwindXWS/rest/customers',
-// data : {request:customerToJSON()},
-// success : function(data, status, jqXHR) {
-// alert('Customer Created');
-// },
-// error : function(jqXHR, textStatus, errorThrown) {
-// alert('Error adding customer: ' + textStatus);
-// }
-// });
-// }
-//
-// function updateCustomer() {
-// // Helper function to serialize all the form fields into a JSON string
-// var customer = {
-// customerID : $('#customerID').val(),
-// companyName : $('#companyName').val(),
-// contactName : $('#contactName').val(),
-// contactTitle : $('#contactTitle').val(),
-// email : $('#email').val(),
-// address : $('#address').val(),
-// city: $('#city').val(),
-// region : $('#region').val(),
-// postalCode : $('#postalCode').val(),
-// country: $('#country').val(),
-// phone : $('#phone').val(),
-// fax : $('#fax').val()
-// };
-//	
-// $.ajax({
-// type : 'POST',
-// contentType: 'application/json',
-// url : 'http://localhost:8080/NorthwindXWS/rest/customers/update/'
-// + $('#customerID').val(),
-// data : JSON.stringify(customer),
-// success : function(data) {
-// alert('Customer Updated');
-// },
-// error : function(jqXHR, textStatus, errorThrown) {
-// alert('Failed to update Data');
-// }
-// });
-// }
-//
-// function deleteCustomer() {
-// $.ajax({
-// type : 'DELETE',
-// url : 'http://localhost:8080/NorthwindXWS/rest/customers/'
-// + $('#customerID').val(),
-// success : function(data, textStatus, jqXHR) {
-// alert('Customer Deleted');
-// },
-// error : function(jqXHR, textStatus, errorThrown) {
-// alert('Error Deleting Customer');
-// }
-// });
-// }
+
+// Function update customer information into database
+function updateCustomer() {
+	// Helper function to serialize all the form fields into a JSON string
+
+	$.ajax({
+		type : 'POST',
+		contentType : 'application/json;charset=utf-8',
+		url : 'http://localhost:8080/NorthwindXWS/rest/customers/update/'
+				+ $('#customerID').val(),
+		data : JSON.stringify(customerToJSON()),
+		success : function() {
+			alert('Customer Updated');
+		},
+		error : function(jqXHR, textStatus, errorThrown) {
+			alert('Failed to update Data');
+		}
+	});
+}
+
+// Function add new customer to database
+ function addCustomer() {
+	$.ajax({
+		type : 'POST',
+		contentType : 'application/json;charset=utf-8',
+		url : 'http://localhost:8080/NorthwindXWS/rest/customers/add',
+		data : JSON.stringify(customerToJSON()),
+		success : function(response) {
+			alert(response);
+		},
+		error : function(jqXHR, textStatus, errorThrown) {
+			alert('Error creating customer');
+		}
+	});
+}
+
+// Function delete customer from database
+ function deleteCustomer() {
+	$.ajax({
+		type : 'POST',
+		url : 'http://localhost:8080/NorthwindXWS/rest/customers/delete/'
+				+ $('#customerID').val(),
+		data: 'DELETECUSTOMER',
+		beforeSend: function(xhr) {
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.setRequestHeader("Content-Type", "application/json");
+        },
+		success : function() {
+			alert('Customer Deleted');
+			search(previousKeyword);
+		},
+		error : function(jqXHR, textStatus, errorThrown) {
+			alert('Error Deleting Customer');
+		}
+	});
+}
+
+ // Function convert customer form to JSON
+function customerToJSON() {
+	var data = {
+		"customerID" : $('#customerID').val(),
+		"companyName" : $('#companyName').val(),
+		"contactName" : $('#contactName').val(),
+		"contactTitle" : $('#contactTitle').val(),
+		"email" : $('#email').val(),
+		"password": "password",
+		"address" : $('#address').val(),
+		"city" : $('#city').val(),
+		"region" : $('#region').val(),
+		"postalCode" : $('#postalCode').val(),
+		"country" : $('#country').val(),
+		"phone" : $('#phone').val(),
+		"fax" : $('#fax').val(),
+		"role" : "USER"
+	};
+	return data
+}
 
 // This method will distribute data to each field
 function renderJSONCustomer(data) {
